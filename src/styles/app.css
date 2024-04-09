@@ -1,0 +1,84 @@
+@import "_mixin";
+@import "_dashboard";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: rgb(47, 0, 255);
+}
+
+.green {
+    color: rgb(0, 197, 0);
+}
+
+/* .adminContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+} */
+
+.adminContainer > aside {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.adminContainer > aside::-webkit-scrollbar {
+    display: none;
+}
+
+.adminContainer > aside > div {
+    margin: 2rem 1rem;
+}
+
+.adminContainer > aside > div > h5 {
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+.adminContainer > aside > div > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+
+.adminContainer > aside > div > ul > li {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.adminContainer > aside > div > ul > li > a {
+    color: #210a0a;
+    display: flex;
+    flex-direction: row;
+}

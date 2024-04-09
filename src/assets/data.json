@@ -1,0 +1,59 @@
+{
+    "categories":[
+        {
+            "value":45,
+            "heading":"laptops"
+        },
+        {
+            "value" : 100,
+            "heading" : "Desktops"
+        },
+        {
+            "value" : 60,
+            "heading" : "Shoes"
+        },
+        {
+            "value" : 30,
+            "heading" : "airbuds"
+        },
+        {
+            "value" : 50,
+            "heading" : "glasses"
+        },
+        {
+            "value" : 90,
+            "heading" : "Speakers"
+        },
+        {
+            "value" : 40,
+            "heading" : "Iphone"
+        },
+        {
+            "value" : 64,
+            "heading" : "Cemera"
+        }
+    ],
+"transaction":[
+    {
+        "id":"transaction",
+        "amount":4000,
+        "qty":5,
+        "discount":500,
+        "status":"processing"
+    },
+    {
+        "id":"transaction",
+        "amount":4000,
+        "qty":5,
+        "discount":500,
+        "status":"processing"
+    },
+    {
+        "id":"transaction",
+        "amount":4000,
+        "qty":5,
+        "discount":500,
+        "status":"processing"
+    }
+]
+}

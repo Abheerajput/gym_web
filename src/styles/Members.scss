@@ -1,0 +1,54 @@
+.table{
+    width: 100%;
+    font-size: medium;
+    background-color: rgb(250, 250, 250);
+}
+.tbody{
+    width: 100%;
+padding-left:20px;
+    font-size: medium;
+}
+.tablerow{
+    width: 100%;
+    font-size: medium;
+    left: 47px;
+  position: relative;
+    background-color: #DDDADA;
+}
+.UserDetails{
+width: 50%;
+>h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 60%;
+}
+.UserInfo{
+    gap: 22px;
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgb(251, 250, 250);
+    left: 36%;
+    position: relative;
+    border-radius: 10%;
+}
+
+.elements{
+    display: flex;
+    gap: 10px;
+>p  
+{
+    background-color: rgb(127, 138, 153);
+    // border: 2px solid rgb(27, 26, 27);
+    border-radius: 10px;
+}
+}
+
+button{
+    background-color: black;
+    color: white;
+}
+}
+.inputForm{
+    color: black;
+}

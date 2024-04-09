@@ -1,0 +1,47 @@
+.adminContainer{
+    display: grid;
+    grid-template-columns: 1fr ;
+     height:100vh;
+   
+    // background-color: rgb(246, 246, 246);
+    gap: 2rem;
+}
+.aside{
+    width: 100%;
+    background-color: #DDDADA;
+    padding: 1rem;
+    z-index: 10;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    >div{
+        margin: 2rem 1rem; 
+        >h5{
+            letter-spacing: 3px;
+            opacity: 0.8;
+            margin: 1rem 0;
+          }
+          >ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            align-items: unset;
+            gap: 1rem;
+            list-style-type: none;
+            >Li{
+             padding: 0.5rem 1rem;
+             border-radius: 10px;
+             background-color: #FF5722;
+             >a{
+              color: #ffffff;
+  display: flex;
+  justify-content: unset;
+
+             }
+            }
+          }
+        }
+      }
+    
