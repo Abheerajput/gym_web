@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "gymdashboard",
+			"path": "../.."
+		},
+		{
+			"name": "NodeJs",
+			"path": "../../../NodeJs"
+		}
+	],
+	"settings": {}
+}

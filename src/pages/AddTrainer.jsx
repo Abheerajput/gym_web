@@ -68,7 +68,7 @@ const AddTrainer = () => {
         window.alert("Trainer has added successfully!");
       }
       if (response.ok) {
-        // window.alert("trainer added successfully!");
+        window.alert("trainer added successfully!");
         setTrainers([...trainers, data.trainer]);
         // Clear the form fields
         setTrainers({
@@ -92,7 +92,7 @@ const AddTrainer = () => {
 
 
   return (
-    <div className="flex h-screen gap-10" style={{ gridTemplateColumns: "1fr 4fr", gap: "2rem", backgroundColor: "rgb(246, 246, 246)", overflowX: "clip", overflowY: "clip", grid: "unset", display: "flex", height: "100Vh" }}>
+    <div className="flex h-screen gap-10" style={{ gridTemplateColumns: "1fr 4fr",  backgroundColor: "rgb(246, 246, 246)", overflowX: "clip", overflowY: "clip", grid: "unset", display: "flex", height: "100Vh" }}>
       <AdminSidebar />
 
       <main className="dashboard " >
@@ -119,9 +119,7 @@ const AddTrainer = () => {
  
         <div className="gap-2 " style={{ marginTop: "50px", display:"flex" }}>
 
- <div className="image">
-<img src={pic} alt="" />
-</div>
+ 
           <form
             method="POST">
             <h1>REGISTERION </h1>
@@ -161,7 +159,6 @@ const AddTrainer = () => {
                 type="text"
                 name="email"
                 id="floating_email"
-                className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" Enter your email address"
                 value={trainers.email}
                 onChange={handleInput}
@@ -173,6 +170,9 @@ const AddTrainer = () => {
 
             <div className="inputForm">
               <input
+              style={{
+                color:'grey'
+              }}
                 type="date"
                 name="DateofAddmisson"
                 id="floating_password"
@@ -208,7 +208,7 @@ const AddTrainer = () => {
                   name="phone"
                   id="floating_Phone"
                   className=""
-                  placeholder="     Phone number (123-456-7890) "
+                  placeholder="Phone number (123-456-7890) "
                   value={trainers.phone}
                   onChange={handleInput}
                   required
@@ -219,13 +219,14 @@ const AddTrainer = () => {
 
               <div className="relative z-0 w-full mb-5 group">
                 <select
+                  style={{opacity:'0.8',borderRadius:'10px 100px / 120px',borderBottom:'1px solid grey',color:'gray'}}
                   name="Trainership"
-                  className=""
+                  className="Membership"              
                   value={trainers.Trainership}
                   onChange={handleInput}
                   required
                 >
-                  <option value="">Select Trainership Type</option>
+                  <option value="">Trainership Type</option>
                   <option value="OneMonth">One Month - Rs. 1000</option>
                   <option value="three-months">Three Months - Rs. 2500</option>
                   {/* Add more options as needed */}
@@ -256,7 +257,7 @@ const AddTrainer = () => {
 
 
 
-            <div className="pb-12 mt-4 text-white rounded contents w-28 bg-stone-600">
+            <div className="pb-12 mt-4  rounded contents w-28 bg-stone-600">
               <ul className="-mt-32 ml-96 contents">
                 {Object.entries(trainers).map(([key, value], index) => (
                   <li key={index} className="py-2">

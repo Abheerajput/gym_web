@@ -30,10 +30,10 @@ const AllTrainers = () => {
     fetchTrainerData();
   }, []);
   return (
-    <div className="flex h-screen gap-10" style={{ gridTemplateColumns: "1fr 4fr", gap: "2rem", backgroundColor: "rgb(246, 246, 246)", overflowX: "clip", overflowY: "clip", grid: "unset", display: "flex", height: "100Vh" }}>
+    <div className="flex h-screen gap-10" style={{ gridTemplateColumns: "1fr 4fr", backgroundColor: "rgb(246, 246, 246)", overflowX: "clip", overflowY: "clip", grid: "unset", display: "flex", height: "100Vh" }}>
     <AdminSidebar />
     <main className="dashboard" >
-    <div className="header" >
+    <div className="header">
         <div className="text-lg">
           <BsSearch />
         </div>
@@ -48,9 +48,9 @@ const AllTrainers = () => {
 
     
     <div>
-    <h2 className='text-white'>Trainers</h2>
+    <h2 className='text-white' >Trainers</h2>
     {loading ? (
-      <p>Loading...</p>
+      <p className='text-white'>Loading...</p>
     ) : (
       <div>
         {Array.isArray(trainers) && trainers.length > 0 ? (

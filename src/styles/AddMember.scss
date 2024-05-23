@@ -1,9 +1,10 @@
 .dashboard {
   width: 100%;
-  background-color: #ffffff;
+  overflow-y: auto;
+  background-color: #ebb097;
 }
 .header{
-  display: flex;
+display: flex;
 height: 4rem;
 flex-direction: row;
 justify-content: unset;
@@ -18,7 +19,7 @@ border-bottom: 1px solid black;
   margin: auto;
   border: none;
   outline: none;
-  background-color: rgb(255, 255, 255);
+  background-color: #ebb097;
 }
 >img{
   width: 2rem;
@@ -30,16 +31,17 @@ border-bottom: 1px solid black;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    gap: 6rem;
     display:flex; 
-    margin-top: 24%;
-  padding: 2rem 2rem 2rem 0;
+    margin-left: -9%;
+  padding: 2rem 2rem 2rem 1rem;
+  transition: 0.5s;
 
   .widget {
     width: 16rem;
     background-color: white;
     box-shadow: 0 0 10px rgb(47, 47, 47);
     padding: 2rem;
+    padding-bottom: 2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -64,9 +66,6 @@ border-bottom: 1px solid black;
         flex-direction: row;
         justify-content: unset ;
         align-items: center;
-        gap: 0.2rem;
-       
-
       }
     }
 
@@ -96,7 +95,12 @@ border-bottom: 1px solid black;
     }
   }
 }
-
+@media screen and (max-width: 321px) {
+  .widgetContainer 
+  {
+    margin-left: 0px;
+  }
+}
 
 input {
   width: 100%;
@@ -104,6 +108,7 @@ input {
   padding: 1rem 0rem;
   margin: auto;
   border: none;
+  border-radius: 5px 0px 10px;
   background-color: rgb(255, 255, 255);
   outline: none;
   border-bottom: 1px solid rgb(254, 19, 19);
@@ -121,48 +126,170 @@ input {
   height: 100%;
 }
 }
+.gap-2
+{
+  margin-left: 10%;
+}
 form{
-  -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.98); 
-  box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.98);
-width: 50%;
-background-color: rgb(255, 255, 255);
-  left: 4%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-family: "Courier New", Courier, monospace;
+  width: 55%;
+  background: url("../assets/flat-background-design-free-vector.jpg") no-repeat center / cover ;
+  left: 17%;
+  opacity: 0.9;
+  border-radius: 10px;
   position: relative;
-// height: 54%;
+  height: 54%;
 >h1{
   font-size: 33px;
   font-weight: bolder;
   text-align: center;
-  color: transparent;
-background: #666666;
--webkit-background-clip: text;
--moz-background-clip: text;
-background-clip: text;
-text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+  color:rgba(0, 0, 0, 0.8);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text
 
 }
 }
 
 
 .Name{
+  border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* For two columns */
   gap: 6px; /* Gap between grid items */
-  
 }
 .inputForm{
 margin-bottom: 1.5rem;
-color: white;
-background-color: black;
-
+width: 90%;
+margin-left: 5%;
+text-align: center;
+border-radius: 10px 100px / 120px;
+>input{
+  border-radius: 10px 100px / 120px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+}
+}
+.Membership {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-Radius:10px 100px / 120px;
+  border-bottom: 1px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 button{
+  height: 35px;
   width: 40%;
- border-radius: 10%;
-  background-color: rgb(243, 243, 243);
+  margin-left: 165px;
+  -ms-progress-appearance: bar;
+  margin-bottom: 10px;
+  border-radius: 5px 0px 10px ;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
 }
-
-
-
-
-
+button:hover
+{
+  height: 35px;
+  width: 40%;
+  margin-bottom: 10px;
+  border-radius: 5px 0px 10px ;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (max-width: 1024px) {
+  .dashboard
+  {
+    height: 100%;
+  }
+  .header {
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .widgetContainer {
+    gap: 1rem;
+    padding: 1rem;
+    align-items:center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  form{
+    width: 88%;
+    margin-left: -110px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .widgetContainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  form{
+    width: 100%;
+    margin-left: -100px;
+  }
+  button
+  {
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header{
+    display: flex;
+    height: 4rem;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
+    >input{
+      width: 100%;
+        text-decoration: none;
+      padding: 1rem 0rem;
+      margin: auto;
+      border: none;
+      outline: none;
+      background-color: #ebb097;
+    }
+    >img{
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Membership
+  {
+    width: 100%;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width:426px) {
+  .dashboard
+  {
+    position: absolute;
+  }
+  form
+  {
+    margin-left: -23%;
+  }
+  button
+  {
+    margin-left: 110px;
+  }
+}
